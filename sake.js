@@ -140,6 +140,9 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+function dogShit(){
+    food = generateFood();
+}
 
 
 // 开始游戏
@@ -179,6 +182,15 @@ document.addEventListener('click',(event)=>{
     else if(target.classList.contains('x2x0')){
         clearInterval(gameInterval);
 
+       
+    }
+    else if(target.classList.contains('x2x5')){
+        clearInterval(gameInterval);
+        snakeSpeed=30
+        console.log(snakeSpeed)
+        gameInterval = setInterval(update, snakeSpeed);
+        
+        const dIgShit = setInterval(dogShit,1000)
        
     }
     
