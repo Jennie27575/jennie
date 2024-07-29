@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse ;
+            margin: 20px auto;
+        }
+        td {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+        .snake {
+            background-color: green;
+        }
+        .food {
+            background-color: red;
+        }
+        button{
+            margin-top: 20px;
+            height: 30px;
+            border-radius: 10px;
+            border: #ccc solid;
+        }
+    </style>
+</head>
+<body>
+    <table id="gameTable"></table>
+    <script src="./sake.js"></script>
+    <div>
+    <div><button class="x2x0">暂停</button></div>
+    <div><button class="x2x1">简单</button></div>
+    <div><button class="x2x2">中等</button></div>
+    <div><button class="x2x3">地狱</button></div>
+    <div><button class="x2x4">难吃</button></div>
+
+    </div>
+</body>
+</html>
